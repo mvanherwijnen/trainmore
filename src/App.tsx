@@ -45,6 +45,8 @@ function App() {
 
   return <div className='full'>
     <form onSubmit={submit}>
+      <h1>Inschrijven</h1>
+      <p>Druk +/- 15 seconden voordat de inschrijving opengaat op onderstaande knop.</p>
       <label htmlFor='instructor'>Instructeur</label>
       <select id='instructor' name='instructor'>
         <option value='manonkrol'>Manon Krol</option>
@@ -64,7 +66,7 @@ function App() {
       </select>
       {
         members.map((member) => {
-          return <><input key={member.membershipId} id={member.membershipId} name='participants' type='checkbox' value={member.membershipId}/><label htmlFor={member.membershipId}>{member.name}</label></>
+          return <div className='radio'><input key={member.membershipId} id={member.membershipId} name='participants' type='checkbox' value={member.membershipId}/><label htmlFor={member.membershipId}>{member.name}</label></div>
         })
       }
       <button type='submit'>Boek les</button>

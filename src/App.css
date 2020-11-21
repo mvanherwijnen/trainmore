@@ -4,7 +4,7 @@ form {
   flex-direction: column;
   position: relative;
   margin: 0 auto;
-  top: calc(50% - 200px);
+  top: calc(50% - 300px);
 }
 
 select {
@@ -14,4 +14,21 @@ select {
 
 .full {
   height: 100vh;
+}
+
+.radio {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.radio label {
+  margin-left: 12px;
+}
+
+.radio:last-of-type {
+  margin-bottom: 24px;
+}
+
+button {
+  height: 40px;
 }
