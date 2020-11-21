@@ -45,7 +45,7 @@ function App() {
 
   return <div className='full'>
     <form onSubmit={submit}>
-      <h1>Inschrijven</h1>
+      <h1>Op vertoon van je lidmaatschapskaart</h1>
       <p>Druk +/- 15 seconden voordat de inschrijving opengaat op onderstaande knop.</p>
       <label htmlFor='instructor'>Instructeur</label>
       <select id='instructor' name='instructor'>
